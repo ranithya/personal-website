@@ -1,21 +1,88 @@
+
 /* Applies to the entire body of the HTML document (except where overridden by more specific
 selectors). */
 body {
-  margin: 25px;
-  background-color: rgb(240,240,240);
-  font-family: arial, sans-serif;
+  margin: 60px;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 
 /* Applies to all <h1>...</h1> elements. */
 h1 {
-  font-size: 35px;
-  font-weight: normal;
+  font-size: 60px;
+  font-weight: strong;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+h2 {
+  font-size: 25px;
+  font-weight: strong;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 5px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Main layout */
+.main-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+}
+
+/* Text side */
+.text-side {
+  flex: 1;
+}
+
+.text-side h2 {
+  margin-bottom: 10px;
+}
+
+.text-side p {
+  margin-bottom: 15px;
+}
+
+.title-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  display: block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00a1cd; /* Button background color */
+  color: white;             /* Text color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: strong;
+  text-align: center;
+  text-decoration: none;    /* Removes default underline */
+  border-radius: 5px;       /* Rounded corners */
+  cursor: pointer;          /* Shows a hand cursor on hover */
+  border: none;
+  
+}
+
+.button-link:hover {
+  background-color: #007190; /* Darker color on hover */
 }
 
 /* Applies to all elements with <... class="someclass"> specified. */
-.someclass { color: red; }
+.someclass { color: rgb(139, 231, 243); }
 
 /* Applies to the element with <... id="someid"> specified. */
-#someid { color: green; }
+#someid { color: rgb(130, 255, 130); }
